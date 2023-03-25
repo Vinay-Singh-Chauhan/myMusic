@@ -1,0 +1,134 @@
+:root{
+    /* --bgcolor:#eae9ef;
+    --topleftshadowcolor:white;
+    --bottomrightshadowcolor:#6a6363; */
+    --color:#ddd8d8;
+    --bgcolor:#2f2c2c;
+    --topleftshadowcolor:#413c3c;
+    --bottomrightshadowcolor:#211f1f;
+    --bgs1:#d6a694;
+
+    
+}
+body{
+    background-color:var(--bgcolor);
+    color:var(--color) !important;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.controls{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+.container{
+    padding: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--bgcolor);
+    border-radius: 50%;
+    
+    
+    /* height: 100px;
+    width:auto; */
+}
+
+.changefont{
+    filter: invert(0.8);
+}
+.playbtn{
+    height: 15rem;
+    width: 15rem;
+    color: var(--color);
+}
+.playbtn svg{ 
+    
+    /* color: var(--color); */
+    height: 10rem;
+    width: 10rem;
+}
+.secondary-controls{
+    padding: 50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reversebtn{
+    height: 5rem;
+    width: 5rem;
+}
+.reversebtn svg{
+    color: var(--color);
+    height: 3rem;
+    width: 3rem;
+}
+.up{
+    box-shadow: -2px -2px 5px 5px var(--topleftshadowcolor),2px 2px 5px 5px var(--bottomrightshadowcolor);
+}
+.down{
+    box-shadow: -2px -2px 5px 5px var(--topleftshadowcolor) inset,2px 2px 5px 5px var(--bottomrightshadowcolor) inset;
+}
+.song{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    border-radius: 3rem;
+    height: 5rem;
+    width: 80%;
+    box-shadow: -2px -2px 5px 5px var(--topleftshadowcolor) inset,2px 2px 5px 5px var(--bottomrightshadowcolor) inset;
+}
+.progress{
+    
+    width: 90%;
+}
+.pallet{
+    z-index: 1;
+    position:absolute;
+    right: 2rem;
+    top:2rem;
+    display: flex;
+    flex-direction: column;
+}
+.swatch{
+    margin: 1rem;
+    /* padding: 1rem; */
+}
+.color{
+border-radius: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.bg-s1{
+   background-color:whitesmoke;
+}
+.bg-s2{
+   background-color: rgb(208, 55, 0);
+}
+.bg-s3{
+   background-color: rgb(0, 102, 0);
+}
+.bg-s4{
+   background-color: black;
+}
+.title{
+    width: 40vw;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: -2px -2px 5px 5px var(--topleftshadowcolor),2px 2px 5px 5px var(--bottomrightshadowcolor);
+}
